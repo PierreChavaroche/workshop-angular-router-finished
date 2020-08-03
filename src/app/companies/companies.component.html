@@ -1,0 +1,19 @@
+<!-- Interpolation -->
+<h2>{{ title }}</h2>
+
+<!-- Binding -->
+<!-- <button [disabled]="clicked" (click)="handleClick()">
+    Klick mich
+</button> -->
+
+<!-- <div *ngIf="clicked"> -->
+    <ul>
+        <li *ngFor="let company of companies">
+            <a [routerLink]="['/companies', company.id]" routerLinkActive="active">
+                {{ company.name }}
+            </a>
+        </li>
+    </ul>
+<!-- </div> -->
+
+<router-outlet></router-outlet>

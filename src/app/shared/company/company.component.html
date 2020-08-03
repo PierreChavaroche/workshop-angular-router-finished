@@ -1,0 +1,11 @@
+<h2 [ngClass]="{'red': company.name === 'Google', 'blue': company.name === 'Facebook'}">
+    {{ company.name }}
+</h2>
+
+<img [src]="company.logoSrc" width="200px" appMagnifier>
+
+<p>
+    Gegründet im Jahr {{ company.foundingYear | year }}
+</p>
+
+<hr/>
